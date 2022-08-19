@@ -89,6 +89,7 @@ function draw() {
 
     if(shrubsGroup.isTouching(kangaroo)) {
       shrubsGroup.destroyEach();
+      score += 0.5;
     }
   } else if (gameState === END) {
     gameOver.x = camera.position.x;
